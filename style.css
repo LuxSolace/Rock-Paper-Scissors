@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    /* insérer fond vhs */
+}
+
+.container {
+    width: 800px;
+    height: 600px;
+    margin: auto;
+    background-image: url(./images/bg.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    position: relative;
+    font-family: 'VT323', monospace;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dialogue-box {
+    font-size: 24px;
+    color: rgb(66, 66, 66);
+    display: inline-block;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0px 5px 0px -1px #ccc, 0px -5px 0px -1px #ccc, 5px 0px 0px -1px #ccc, -5px 0px 0px -1px #ccc, inset 0px -5px 0px -1px #e6e5e5, inset -5px 0px 0px -1px #e6e5e5;
+}
+
+#play-guide {
+    position: absolute;
+    top: 25px;
+    left: 25px
+    /* ajouter animation flottante */
+}
+
+.prompt p {
+    font-size: 32px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}    
+
+#weapons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}    
+
+#weapons img:hover {
+    filter: brightness(1.2);
+    transition: 0.5;
+    cursor: pointer;
+}
+
+/* ajouter en js animation assombri en cas de clic */
+
+.hero-container {
+    position: absolute;
+    bottom: 80px;
+    left: 100px;
+    display: flex;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-left: 10px;
+}
+
+.stats span {
+    font-size: 24px;
+}
+
+.villain-container {
+    position: absolute;
+    bottom: 80px;
+    right: 100px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.villain-container img {
+    transform: scaleX(-1);
+}
+
+.villain-container .stats {
+    align-items: flex-end;
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+.health-bar-container {
+    display: inline-flex;
+    position: relative;
+    border: solid 2px black;
+    box-shadow: 2px 0px 0px -1px rgb(0, 0, 0), -2px 0px 0px -1px rgb(0, 0, 0), 0px 2px 0px -1px rgb(0, 0, 0), 0px -2px 0px -1px rgb(0, 0, 0);
+}
+
+.health-bar-container .pv {
+    height: 5px;
+    width: 15px;
+    background-color: transparent;
+    z-index: 2;
+}
+
+.health-bar-container .pv:not(:nth-child(5)) {
+    border-right: 2px solid black;
+}
+
+.health-bar {
+    background-color: rgb(168, 54, 54);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#villain-choice {
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    opacity: 0;
+    /* animation-name: villain-choice;
+    animation-duration: 2.5s;
+    animation-iteration-count: 1; */
+}
+
+/*
+
+@keyframes damage {
+    0% { filter: brightness(1); }
+    100% { filter: brightness(2); }
+}
+
+.damaged {
+    animation-name: damage;
+    animation-duration: 0.3s;
+    animation-iteration-count: 3;
+}
+
+@keyframes villain-choice {
+    0% {
+        opacity: 0;
+        display: block;
+    }
+
+    50% {opacity: 1; top: -60px}
+
+    100% {
+        top: -60px;
+        opacity: 0
+    }
+
+} */

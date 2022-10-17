@@ -5,11 +5,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissors</title>
+    <title>Auspicious Ran</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    
+
+    <div class="container">
+        
+        <div class="dialogue-box" id="play-guide">
+            <p>sword beats crossbow</p>
+            <p>crossbow beats axe</p>
+            <p>axe beats sword</p>
+        </div>
+
+        <div class="prompt">
+
+            <p>what will you do ?</p>
+
+            <div id="weapons">
+                <img src="./images/sword.jpg" id="img-sword">
+                <img src="./images/crossbow.jpg" id="img-crossbow">
+                <img src="./images/axe.jpg" id="id-axe">
+            </div>
+
+        </div>
+
+        <div class="hero-container">
+
+            <img src="./images/woman.png" id="hero"/>
+
+            <div class="stats">
+
+                <span>Ran</span>
+
+                <div class="health-bar-container">
+
+                    <div class="pv"></div>
+                    <div class="pv"></div>
+                    <div class="pv"></div>
+                    <div class="pv"></div>
+                    <div class="pv"></div>
+
+                    <div class="health-bar" id="hero-health-bar"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="villain-container">
+
+            <img src="./images/woman.png" id="villain"/>
+            <img src="./images/axe.jpg" id="villain-choice"/>
+
+            <div class="stats">
+
+                <span>Evil double</span>
+
+                <div class="health-bar-container">
+
+                    <div class="pv"></div>
+                    <div class="pv"></div>
+                    <div class="pv"></div>
+                    <div class="pv"></div>
+                    <div class="pv"></div>
+
+                    <div class="health-bar" id="villain-health-bar"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+        
+    </div>
+
 </body>
 
 <script type="text/javascript" src="./rock-paper-scissors.js"></script>
