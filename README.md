@@ -10,6 +10,6 @@ It was quite the learning experience, and I might revisit the project again to a
 
 ## Credits
 
-Forest background asset from https://uppon-hill.itch.io/indie-tales-parallax
-Villager sprite asset from https://craftpix.net/freebies/free-villagers-sprite-sheets-pixel-art/?num=1&count=2&sq=villagers&pos=0
+Forest background asset from https://uppon-hill.itch.io/indie-tales-parallax<br>
+Villager sprite asset from https://craftpix.net/freebies/free-villagers-sprite-sheets-pixel-art/?num=1&count=2&sq=villagers&pos=0<br>
 Weapons Icons from https://cheekyinkling.itch.io/shikashis-fantasy-icons-pack?download
