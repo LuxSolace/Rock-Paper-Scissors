@@ -1,5 +1,7 @@
 # Rock-Paper-Scissors
 
+<a href="https://luxsolace.github.io/Rock-Paper-Scissors/" target="_blank">Page viewable here</a>
+
 This project was meant to be an assignment for The Odin Project (https://www.theodinproject.com/lessons/foundations-revisiting-rock-paper-scissors), a simple rock paper scissors ui to play the game with instead of the console. 
 
 It just so happens that you can find a lot of free-to-use graphical assets in the indie video game community, and that I like video games in general, hence the idea to turn the rock paper scissors game ui into something akin to a fighting game. 
