@@ -24,6 +24,8 @@ function playRound(playerSelection, computerSelection) {
         return roundResult = "player won"
     } else if (playerSelection === computerSelection) {
         return roundResult = "tie"
+    } else if (playerSelection != "rock" || "paper" || "scissors") {
+        console.log("Trying to cheat ? It's either rock, paper, or scissors !")
     } else {
         return roundResult = "player lost"
     }
@@ -56,9 +58,11 @@ function game() {
             console.log(`You win ! ${capitalize(playerChoice)} beats ${computerChoice}. Player score : ${playerScore} / Computer score : ${computerScore}`)
         } else if (roundResult === "tie") {
             console.log(`It's a tie ! Player score : ${playerScore} / Computer score : ${computerScore}`)
-        } else {
+        } else if (roundResult === "player lost") {
             computerScore ++
             console.log(`You lose ! ${capitalize(computerChoice)} beats ${playerChoice}. Player score : ${playerScore} / Computer score : ${computerScore}`)
+        } else {
+            i--
         }
 
     }
