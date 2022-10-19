@@ -44,7 +44,7 @@ body {
     position: absolute;
     top: 25px;
     left: 25px
-    /* ajouter animation flottante */
+    /* ajouter motif en bg */
 }
 
 .prompt p {
@@ -65,9 +65,7 @@ body {
     cursor: pointer;
 }
 
-/* ajouter en js animation assombri en cas de clic */
-
-.hero-container {
+#hero-container {
     position: absolute;
     bottom: 80px;
     left: 100px;
@@ -86,7 +84,7 @@ body {
     font-size: 24px;
 }
 
-.villain-container {
+#villain-container {
     position: absolute;
     bottom: 80px;
     right: 100px;
@@ -94,11 +92,11 @@ body {
     flex-direction: row-reverse;
 }
 
-.villain-container img {
+#villain-container img {
     transform: scaleX(-1);
 }
 
-.villain-container .stats {
+#villain-container .stats {
     align-items: flex-end;
     margin-left: 0;
     margin-right: 10px;
@@ -193,6 +191,7 @@ body {
 }
 
 @keyframes weapon-choice {
+
     0% {
         opacity: 0;
         display: block;
@@ -206,3 +205,29 @@ body {
     }
 
 } 
+
+.floating {
+    animation-name: floating;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes floating {
+    0% {margin-top: 5px}
+    50% {margin-top: 0px;}
+    100% {margin-top: 5px}
+}
+
+@keyframes fade-out {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+.fade-out {
+    animation-name: fade-out;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
