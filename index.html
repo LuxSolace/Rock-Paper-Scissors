@@ -15,70 +15,78 @@
 <body>
 
     <div class="container">
-        
-        <div class="dialogue-box" id="play-guide">
-            <p>sword beats crossbow</p>
-            <p>crossbow beats axe</p>
-            <p>axe beats sword</p>
-        </div>
 
-        <div class="prompt">
+        <div class="top-line">
 
-            <p id="player-prompt">what will you do ?</p>
-
-            <div id="weapons">
-                <input type="image" onclick="game('sword')" src="./images/sword.jpg" class="weapons-btn">
-                <input type="image" onclick="game('crossbow')" src="./images/crossbow.jpg" class="weapons-btn">
-                <input type="image" onclick="game('axe')" src="./images/axe.jpg" class="weapons-btn">
+            <div class="dialogue-box" id="play-guide">
+                <p>sword beats crossbow</p>
+                <p>crossbow beats axe</p>
+                <p>axe beats sword</p>
             </div>
 
-        </div>
+            <div class="prompt">
 
-        <div class="absolute-center dialogue-box floating" id="round-result">Ran wins !</div>
+                <p id="player-prompt">what will you do ?</p>
 
-        <div id="hero-container">
-
-            <img src="./images/woman.png" id="hero-img"/>
-            <img src="./images/axe.jpg" id="hero-choice"/>
-
-            <div class="stats">
-
-                <span>Ran</span>
-
-                <div class="health-bar-container">
-
-                    <div class="pv"></div>
-                    <div class="pv"></div>
-                    <div class="pv"></div>
-                    <div class="pv"></div>
-                    <div class="pv"></div>
-
-                    <div class="health-bar" id="hero-health-bar"></div>
-
+                <div id="weapons">
+                    <input type="image" onclick="game('sword')" src="./images/sword.jpg" class="weapons-btn">
+                    <input type="image" onclick="game('crossbow')" src="./images/crossbow.jpg" class="weapons-btn">
+                    <input type="image" onclick="game('axe')" src="./images/axe.jpg" class="weapons-btn">
                 </div>
 
             </div>
 
         </div>
 
-        <div id="villain-container">
+        <div class="absolute-center dialogue-box floating" id="round-result">Ran wins !</div>
 
-            <img src="./images/woman.png" id="villain-img"/>
-            <img src="./images/axe.jpg" id="villain-choice"/>
+        <div class="actor-container">
 
-            <div class="stats">
+            <div id="hero-container">
 
-                <span>Evil double</span>
+                <img src="./images/woman.png" id="hero-img"/>
+                <img src="./images/axe.jpg" id="hero-choice"/>
 
-                <div class="health-bar-container">
+                <div class="stats">
 
-                    <div class="pv"></div>
-                    <div class="pv"></div>
-                    <div class="pv"></div>
-                    <div class="pv"></div>
-                    <div class="pv"></div>
+                    <span>Ran</span>
 
-                    <div class="health-bar" id="villain-health-bar"></div>
+                    <div class="health-bar-container">
+
+                        <div class="pv"></div>
+                        <div class="pv"></div>
+                        <div class="pv"></div>
+                        <div class="pv"></div>
+                        <div class="pv"></div>
+
+                        <div class="health-bar" id="hero-health-bar"></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="villain-container">
+
+                <img src="./images/woman.png" id="villain-img"/>
+                <img src="./images/axe.jpg" id="villain-choice"/>
+
+                <div class="stats">
+
+                    <span>Evil double</span>
+
+                    <div class="health-bar-container">
+
+                        <div class="pv"></div>
+                        <div class="pv"></div>
+                        <div class="pv"></div>
+                        <div class="pv"></div>
+                        <div class="pv"></div>
+
+                        <div class="health-bar" id="villain-health-bar"></div>
+
+                    </div>
 
                 </div>
 
